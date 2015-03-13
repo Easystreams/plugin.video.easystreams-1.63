@@ -228,7 +228,7 @@ def get_xml_database(url, browse=False):
 
 
 def getCommunitySources(browse=False):
-        url = 'https://github.com/Easystreams/easystreams3/blob/master/easystreams.xml'
+        url = 'https://github.com/Easystreams/'
         soup = BeautifulSoup(makeRequest(url), convertEntities=BeautifulSoup.HTML_ENTITIES)
         files = soup('ul')[0]('li')[1:]
         for i in files:
